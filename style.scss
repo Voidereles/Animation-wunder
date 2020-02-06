@@ -1,0 +1,228 @@
+svg {
+    overflow: visible;
+}
+
+.text {
+    animation-name: text;
+
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(-10px) rotate3d(1, 0, 1, -4deg);
+}
+
+.wand {
+    animation-name: wand;
+    animation-duration: 2s;
+    transform-origin: bottom;
+    animation-iteration-count: infinite;
+    fill: #183BD1;
+}
+
+.hat {
+    transform: translateY(-10px) rotate3d(1, 0, 1, 10deg);
+    opacity: 0;
+    animation-name: hat;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.star-left-bottom {
+    transform: translate(5%, 27%);
+    opacity: 0;
+    fill: #183BD1;
+    animation-name: star-left-bottom;
+    animation-duration: 1.5s;
+    animation-delay: 4.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.star-left-bottom-2 {
+    animation-name: star-left-bottom-2;
+    animation-delay: 4.8s;
+    animation-duration: 2.5s;
+
+}
+
+.star-right-bottom {
+    animation-name: star-right-bottom;
+    animation-delay: 4.1s;
+    animation-duration: 3s;
+    transform: translate(1%, 26%);
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.star-right-bottom-2 {
+    animation-name: star-right-bottom-2;
+    animation-delay: 4.4s;
+    animation-duration: 4s;
+    transform: translate(1%, 26%);
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.star-left-top {
+    animation-name: star-left-top;
+    animation-delay: 4.4s;
+    animation-duration: 1.8s;
+    transform: translate(4%, 45%);
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.star-right-top {
+    animation-name: star-right-top;
+    animation-delay: 4.4s;
+    animation-duration: 2.8s;
+    transform: translate(-1%, 34%);
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes hat {
+    100% {
+        transform: translateY(0) rotate3d(1, 0, 1, 0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes star-left-bottom {
+    30% {
+        opacity: 1;
+        transform: translate(3%, 23%) rotate3d(1, 1, 1, -18deg);
+    }
+
+    80% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-2%, -3%) rotate3d(1, 1, 1, 0deg) scale(0.75);
+    }
+}
+
+@keyframes star-left-bottom-2 {
+    40% {
+        opacity: 1;
+        transform: translate(4%, 24%) rotate3d(1, 1, 1, -18deg);
+    }
+
+    55% {
+        opacity: 0.7;
+    }
+
+    70% {
+        opacity: 0;
+        transform: translate(6%, -18%) rotate3d(1, 1, 1, 3deg) scale(1.25);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(5%, 27%);
+    }
+}
+
+@keyframes star-right-bottom {
+    31% {
+        opacity: 1;
+        transform: translate(-2%, -9%) scaleZ(1.05);
+    }
+
+    55% {
+        opacity: 0.5;
+        transform: translate(-7%, -20%) scaleZ(1.1);
+    }
+
+    70% {
+        opacity: 0;
+        transform: translate(-11%, -36%) scaleZ(1.15);
+
+    }
+
+}
+
+@keyframes star-right-bottom-2 {
+    20% {
+        opacity: 1;
+        transform: translate(1%, 11%) rotate3d(1, 1, 1, -5deg);
+    }
+
+    55% {
+        opacity: 0.7;
+    }
+
+    70% {
+        opacity: 0;
+        transform: translate(1%, -18%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(3%, 26%);
+    }
+}
+
+@keyframes star-left-top {
+    30% {
+        opacity: 1;
+        transform: translate(6%, 23%);
+    }
+
+    80% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(7%, 15%) rotate3d(1, 1, 1, 0deg) scale(0.75);
+    }
+}
+
+@keyframes star-right-top {
+    31% {
+        opacity: 1;
+        transform: translate(0, 14%);
+    }
+
+    70% {
+        opacity: 0;
+        transform: translate(0, -40%);
+
+    }
+
+}
+
+@keyframes text {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate3d(1, 0, 1, 0deg);
+    }
+}
+
+@keyframes wand {
+
+    20% {
+        transform: rotateZ(-1deg);
+    }
+
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(-1deg);
+    }
+}
