@@ -175,6 +175,24 @@
         }
     }
 
+    @-webkit-keyframes star-left-bottom {
+        30% {
+            opacity: 1;
+            -webkit-transform: translate(3%, 23%) rotate3d(1, 1, 1, -18deg);
+            transform: translate(3%, 23%) rotate3d(1, 1, 1, -18deg);
+        }
+
+        80% {
+            opacity: 0.7;
+        }
+
+        100% {
+            opacity: 0;
+            -webkit-transform: translate(-2%, -3%) rotate3d(1, 1, 1, 0deg) scale(0.75);
+            transform: translate(-2%, -3%) rotate3d(1, 1, 1, 0deg) scale(0.75);
+        }
+    }
+
     @keyframes star-left-bottom {
         30% {
             opacity: 1;
